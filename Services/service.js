@@ -14,7 +14,7 @@ const mail=(email)=>{
         from:'ssubash042@gmail.com',
         to:`${email}`,
         subject:'password reset',
-        text:`http://localhost:5173/resetpassword/${email}`
+        text:`https://subashday42taskfe.netlify.app/resetpassword/${email}`
     };
     
     mailTransporter.sendMail(details,(err)=>{
